@@ -13,6 +13,9 @@ import {SubjectListComponent} from "./main/tabs/subject-list/subject-list.compon
 import {SubjectComponent} from "./main/tabs/subject-list/subject/subject.component";
 import {HttpClientModule} from "@angular/common/http";
 import {CrudService} from "./service/crud.service";
+import {AddEditTeacherComponent} from "./main/common/add-edit-teacher/add-edit-teacher.component";
+import {FormsModule} from "@angular/forms";
+import {FlexLayoutModule} from "@angular/flex-layout";
 
 @NgModule({
   declarations: [
@@ -22,16 +25,19 @@ import {CrudService} from "./service/crud.service";
     TeacherListComponent,
     TeacherComponent,
     SubjectListComponent,
-    SubjectComponent
+    SubjectComponent,
+    AddEditTeacherComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
+    FormsModule,
     MaterialModule,
-    HttpClientModule
+    HttpClientModule,
+    FlexLayoutModule
   ],
-  providers: [CrudService],
+  providers: [CrudService, AddEditTeacherComponent],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

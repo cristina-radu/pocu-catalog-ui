@@ -1,0 +1,9 @@
+.teacher-container {
+  min-width: 300px;
+  min-height: 300px;
+  margin:15px;
+}
+
+.teacher-field-container {
+  margin: 10px;
+}

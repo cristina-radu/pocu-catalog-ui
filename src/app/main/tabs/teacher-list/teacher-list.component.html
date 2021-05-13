@@ -1,5 +1,9 @@
+<div class="button-container">
+  <button mat-raised-button color="primary" (click)="onAddTeacher()">Add Teacher</button>
+</div>
 <mat-list>
   <mat-list-item *ngFor="let teacher of teachers">
-    <app-teacher [teacher]="teacher"></app-teacher>
+    <app-teacher (teacherDataChanged)="updateTeacherList()" [teacher]="teacher"></app-teacher>
+    <mat-divider></mat-divider>
   </mat-list-item>
 </mat-list>

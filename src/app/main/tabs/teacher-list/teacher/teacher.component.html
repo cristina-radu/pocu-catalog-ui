@@ -1,1 +1,11 @@
-<p>{{teacher.firstName}} {{teacher.lastName}}</p>
+<div>
+  <span>
+    <span class="delete-icon-container" (click)="onDelete()" matRipple matTooltip="Click to Delete Teacher">
+      <mat-icon class="icon">highlight_off</mat-icon>
+    </span>
+    <span class="edit-icon-container" (click)="onEdit()" matRipple matTooltip="Click to Edit Teacher">
+      <mat-icon class="icon">build</mat-icon>
+    </span>
+  </span>
+  <span>{{teacher.firstName}} {{teacher.lastName}}</span>
+</div>

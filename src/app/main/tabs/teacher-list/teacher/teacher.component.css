@@ -1,0 +1,14 @@
+.delete-icon-container {
+  color: brown;
+  margin: 0px 5px 0px 5px;
+  cursor: pointer;
+}
+
+.edit-icon-container {
+  margin: 0px 5px;
+  cursor: pointer;
+}
+
+.icon {
+  font-size: 18px;
+}

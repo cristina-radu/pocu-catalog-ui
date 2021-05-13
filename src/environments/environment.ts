@@ -5,6 +5,9 @@
 export const environment = {
   production: false,
   getTeachersUrl: 'http://localhost:8081/catalog/teacher',
+  saveTeacherUrl: 'http://localhost:8081/catalog/teacher',
+  updateTeacherUrl: 'http://localhost:8081/catalog/teacher/{id}',
+  deleteTeacherUrl: 'http://localhost:8081/catalog/teacher/{id}',
   getSubjectsUrl: 'http://localhost:8081/catalog/subject'
 };
 
